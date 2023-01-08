@@ -6,9 +6,10 @@ import "./foobToken.sol";
 
 contract MyNightClub is SafeERC20 {
 
+foobToken public token;
 
 constructor(foobToken _token) public {
-public token = foobToken;
+token = _token;
 }
 
 // Purchase items using tokens
