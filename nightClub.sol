@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;  
+pragma solidity ^0.8.0;
 //SPDX-License-Identifier: MIT
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/utils/SafeERC20.sol";
@@ -17,25 +17,50 @@ token = _token;
 
 function purchase(uint256 _amount) public {
 
-require(token.balanceOf(msg.sender) >= _amount, "Insufficient balance");
-token.safeTransferFrom(msg.sender, address(this), _amount);
-token.transfer(address(this), _amount);
+require(token.balanceOf(msg.sender) >= amount, "Insufficient balance");
+token.safeTransferFrom(msg.sender, address(this), amount);
+token.transfer(address(this), amount);
 
 }
 
 // Allow users to book events at the club
-function bookEvent(uint256 _eventId, uint256 _amount) public {
+function bookEvent(uint256 eventId, uint256 amount) public {
 
-require(token.balanceOf(msg.sender) >= _amount, "Insufficient balance");
+require(token.balanceOf(msg.sender) >= amount, "Insufficient balance");
 
 // Check if the event is available
-// ... (we need a calender)
+// ... (do we need a calender? Slots available?)
 
-token.safeTransferFrom(msg.sender, address(this), _amount);
-token.transfer(address(this), _amount);
+token.safeTransferFrom(msg.sender, address(this), amount);
+token.transfer(address(this), amount);
+
+// alternatively: deposit?
+
+event Deposit(
+        address indexed _reserve,
+        address indexed _user,
+        uint256 _amount,
+        uint16 indexed _referral,
+        uint256 _timestamp
+    );
+
 
 // Reserve the event for the user
-// ... 
+
+event ReserveEnabled(address indexed _reserve, address indexed _user);
+
+
+
+// refund? 
+ event Refund(
+        address indexed _reserve,
+        address indexed _user,
+        address indexed _repayer,
+        uint256 _amountMinusFees,
+        uint256 _fees,
+        uint256 _borrowBalanceIncrease,
+        uint256 _timestamp
+    );
 
 }
 }
