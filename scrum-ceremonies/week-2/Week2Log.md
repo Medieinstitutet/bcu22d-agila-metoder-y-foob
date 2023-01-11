@@ -1,18 +1,23 @@
 # Sammanfattning av veckan
 
 ## Sprint planning
-- Vi tog 3 uppgifter denna vecka
+- 
 - Vår burndown chart var inte så bra; vi behöver prioritera om
 
 ## Daily standup
 ### måndag
-- 
+- Möte, utvärdering av föregående vecka. Burndown-chart fixat
 
 ### tisdag
-- Vi fick gjort x, y, z
-- Vi har inte gjort å
+- Diskuterade token, blockchain och smarta kontrakt. Framtidsvisioner.
+
 ### onsdag
 - Möte, analysering av "flyfish restaurant" som använder sig av samma teknik som oss.
+- NFTs i stort sett klar, metadata kvar. 
+- Prova deploya på testnet
+- diskuterat olika funktionaliteter att implementera på hemsidan 
+
+
 ## Sprint review & demo
 - Vi hittade 3 buggar när vi körde demon
 - Vi kom överens om att prioritera ner feature X; tidsbrist
