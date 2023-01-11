@@ -6,13 +6,13 @@
 
 ## Daily standup
 ### måndag
-- Vi fick gjort x, y, z
-- Vi har inte gjort å, ä, ö
+- 
 
 ### tisdag
 - Vi fick gjort x, y, z
-- Vi har inte gjort å, ä, ö
-
+- Vi har inte gjort å
+### onsdag
+- Möte, analysering av "flyfish restaurant" som använder sig av samma teknik som oss.
 ## Sprint review & demo
 - Vi hittade 3 buggar när vi körde demon
 - Vi kom överens om att prioritera ner feature X; tidsbrist
