@@ -22,7 +22,8 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
         _setURI(newuri);
     } //Lägg till metadata länk senare efter ERC1155 rad 17
 
-    function mint(address account, uint256 id, uint256 amount, bytes memory data) public payable {
+    // function mint(address account, uint256 id, uint256 amount, bytes memory data) public payable { << removed parameters as they are not in use
+    function mint() public payable {
         require(totalSupply(0) + 1 <= MAX_TOKENS, 'Purchase would exceed max supply of tokens');
         require(TOKEN_PRICE == msg.value, 'Ether value sent is not correct');
         _mint(msg.sender, 0, 1, '');
