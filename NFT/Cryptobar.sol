@@ -46,6 +46,26 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
         uint256 balance = address(this).balance;
         payable(msg.sender).transfer(balance);
     }
+    
+    
+    // ADD BOOKING FUNCTIONALITY
+
+    mapping(uint256 => bool) public tableAvailability;
+    mapping(uint256 => bool) public locationAvailability;
+
+    function bookTable(uint256 tableId, uint256 tokenAmount) public {
+        require(tableAvailability[tableId] == true, "Table is not available");
+        require(balanceOf(msg.sender, 0) >= tokenAmount, "You don't have enough tokens to book this table");
+        tableAvailability[tableId] = false;
+        safeTransferFrom(msg.sender, address(this), 0, tokenAmount, new bytes(0));
+    }
+
+    function bookLocation(uint256 locationId, uint256 tokenAmount) public {
+        require(locationAvailability[locationId] == true, "Location is not available");
+        require(balanceOf(msg.sender, 0) >= tokenAmount, "You don't have enough tokens to book this location");
+        locationAvailability[locationId] = false;
+        safeTransferFrom(msg.sender, address(this), 0, tokenAmount, new bytes(0));
+    }
 
     // The following functions are overrides required by Solidity.
 
