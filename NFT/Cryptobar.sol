@@ -14,7 +14,7 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
 
     mapping(address => bool) public userClaimed;
 
-    constructor(bytes32_merkleRoot) ERC1155("/* link to metadata goes here {id}*/") {
+    constructor(bytes32 _merkleRoot) ERC1155("/* link to metadata goes here {id}*/") {
         merkleRoot = _merkleRoot;
     }
 
