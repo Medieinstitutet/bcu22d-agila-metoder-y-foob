@@ -47,7 +47,6 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
         payable(msg.sender).transfer(balance);
     }
     
-    
     // ADD BOOKING FUNCTIONALITY
 
     mapping(uint256 => bool) public tableAvailability;
