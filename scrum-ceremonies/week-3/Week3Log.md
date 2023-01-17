@@ -1,23 +1,27 @@
 # Sammanfattning av veckan
-- Den här veckan fick vi mycket gjort! Vi deploayade NFT-token, gjorde klart hemsidan, haft möten varannan dag.
+-Fixa bokningssystem, fixa smådetajler på hemsidan, arbeta på pitch, rensa upp bland koden / i repot
 ## Sprint planning
 
 
 
 ## Daily standup
 ### måndag
-- Möte, Huseby fixade NFT-token dock nästintill klar, saknas metadata
+- Möte, gick igenom vad som kommer att behöva göras under veckan
+- Tenta
+- Började med PowerPoint-presentationen
 
 ### tisdag
-- vilodag
+- Möte
+- Fortsatte med PowerPointen.
+- Färdigställde hemsidan
 
 ### onsdag
-- Möte, framsteg angående NFTs, provade att deploya på testnet!
+- 
 
 ### Torsdag
 - 
 
 ### Fredag
-- Möte, diskuterat olika funktionliteter att implementera på hemsidan
+- 
 
 ## Sprint review & demo
