@@ -14,7 +14,7 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
 
     mapping(address => bool) public userClaimed;
 
-    constructor(bytes32 _merkleRoot) ERC1155("https://gateway.pinata.cloud/ipfs/QmWHBAv1eAnph3UaM5oAnyJCq2MhZcAd1EqsuM1bB8FTaG {id}") {
+    constructor(bytes32 _merkleRoot) ERC1155("https://gateway.pinata.cloud/ipfs/QmWHBAv1eAnph3UaM5oAnyJCq2MhZcAd1EqsuM1bB8FTaG/cryptobar.json {id}") {
         merkleRoot = _merkleRoot;
         totalBalance[0] = 0;
     }
