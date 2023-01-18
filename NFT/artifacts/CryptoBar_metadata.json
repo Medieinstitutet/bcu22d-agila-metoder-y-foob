@@ -218,116 +218,6 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "locationId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "bookingTime",
-						"type": "uint256"
-					}
-				],
-				"name": "bookLocation",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "tableId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "bookingTime",
-						"type": "uint256"
-					}
-				],
-				"name": "bookTable",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "locationId",
-						"type": "uint256"
-					}
-				],
-				"name": "cancelLocationBooking",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "locationId",
-						"type": "uint256"
-					}
-				],
-				"name": "cancelRecurringBooking",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "tableId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "bookingTime",
-						"type": "uint256"
-					}
-				],
-				"name": "cancelTableBooking",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "emergency",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "emergencyStop",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
 					}
@@ -338,19 +228,6 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTotalBalance",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
 					}
 				],
 				"stateMutability": "view",
@@ -381,54 +258,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "locationAvailability",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "locationBookings",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "bookingTime",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "merkleRoot",
 				"outputs": [
@@ -442,7 +271,28 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
 				"name": "mint",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -472,130 +322,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "productAvailability",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "productPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "products",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "availability",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "recurringBookings",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "startDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "endDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "frequency",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "productId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "redeemProduct",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -692,39 +418,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "locationId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "startDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "endDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "frequency",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "setRecurringBooking",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "newuri",
 						"type": "string"
@@ -749,73 +442,6 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "tableAvailability",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "tableBookings",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "bookingTime",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenAmount",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "totalBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -1055,11 +681,11 @@
 			]
 		},
 		"NFT/Cryptobar.sol": {
-			"keccak256": "0x58f82ef273839b717d7a4e0be65ff248ade68b7d6aa57d1a091287e67ae6fb99",
+			"keccak256": "0xa4c38c0993c0ee7ad41b97e38094793846158a075c653dfc8974411a580408ce",
 			"license": "CBT",
 			"urls": [
-				"bzz-raw://a8e400b91427a410c5c8ba683d299a6cc58d915364068f712ec43f00437b6891",
-				"dweb:/ipfs/QmPRRiFQad1HedY8CfELLhZgk4D5bc4bgJWXCNXFk3ijBc"
+				"bzz-raw://048b299646d170277c58408f2d57d742a54014c379eff09a912c3d83c94da6d6",
+				"dweb:/ipfs/QmTuSAN8qqtRHmpAYtns3ARw1ZXkawAoKTzde9scQqry4m"
 			]
 		}
 	},
