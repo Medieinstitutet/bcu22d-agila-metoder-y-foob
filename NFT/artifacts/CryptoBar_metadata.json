@@ -271,28 +271,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
-					}
-				],
+				"inputs": [],
 				"name": "mint",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -681,11 +660,11 @@
 			]
 		},
 		"NFT/Cryptobar.sol": {
-			"keccak256": "0xa4c38c0993c0ee7ad41b97e38094793846158a075c653dfc8974411a580408ce",
+			"keccak256": "0x399fbabe26b752b17f31999d679362ee6a4a28fd395ffa37f73be7cc2f4fabb6",
 			"license": "CBT",
 			"urls": [
-				"bzz-raw://048b299646d170277c58408f2d57d742a54014c379eff09a912c3d83c94da6d6",
-				"dweb:/ipfs/QmTuSAN8qqtRHmpAYtns3ARw1ZXkawAoKTzde9scQqry4m"
+				"bzz-raw://6b007774b858624eae419452ce2b0a4db6e63e0f2d49ddecb1c75e4697f39f71",
+				"dweb:/ipfs/QmR9Z4YfUiSWUwnpZNr6T78u5Ap1bcj7kvxjJkcHzqtw1M"
 			]
 		}
 	},
