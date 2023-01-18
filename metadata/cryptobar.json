@@ -1,0 +1,17 @@
+{
+	"name": "Crypto Haven",
+	"created_by": "Haven DAO",
+	"description": "Only 100 editions of unique Haven NFT.",
+	"external_url": "https://cryptohaven.club",
+	"image": "https://gateway.pinata.cloud/ipfs/QmZm7Lk5iZXuiyKAL1sWCC9McUKETEYEkJnnPaJN21Srwp",
+	"attributes": [{
+		"trait_type": "Artist",
+		"value": "Crypto Haven"
+	}, {
+		"trait_type": "Edition",
+		"value": "Genesis"
+	}, {
+		"trait_type": "Type",
+		"value": "OG"
+	}]
+}
