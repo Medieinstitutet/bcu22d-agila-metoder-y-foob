@@ -10,13 +10,9 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
     uint256 constant TOKEN_PRICE = 0.02 ether; //Mint price
     uint256 public constant MAX_TOKENS = 100; //Max supply
 
-    bytes32 public immutable merkleRoot;
-
     mapping(address => bool) public userClaimed;
 
-    constructor(bytes32 _merkleRoot) ERC1155("https://gateway.pinata.cloud/ipfs/QmWHBAv1eAnph3UaM5oAnyJCq2MhZcAd1EqsuM1bB8FTaG/cryptobar.json {id}") {
-        merkleRoot = _merkleRoot;
-    }
+    constructor() ERC1155("https://gateway.pinata.cloud/ipfs/QmWHBAv1eAnph3UaM5oAnyJCq2MhZcAd1EqsuM1bB8FTaG/cryptobar.json {id}") {}
 
     function setURI(string memory newuri) public onlyOwner {
         _setURI(newuri);
@@ -33,8 +29,6 @@ contract CryptoBar is ERC1155, Ownable, ERC1155Supply {
         require(!userClaimed[msg.sender], 'Adress already claimed');
 
         bytes32 leaf = keccak256(abi.encodePacked(msg.sender, msg.value));
-        bool isValidLeaf = MerkleProof.verify(proof, merkleRoot, leaf);
-        require(isValidLeaf, 'Adress is not eligible for mint with discount');
 
         _mint(msg.sender, 0, 1, '');
 

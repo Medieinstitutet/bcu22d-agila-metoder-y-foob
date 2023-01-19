@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "_merkleRoot",
-						"type": "bytes32"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -252,19 +246,6 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "merkleRoot",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
 					}
 				],
 				"stateMutability": "view",
@@ -660,11 +641,11 @@
 			]
 		},
 		"NFT/Cryptobar.sol": {
-			"keccak256": "0x399fbabe26b752b17f31999d679362ee6a4a28fd395ffa37f73be7cc2f4fabb6",
+			"keccak256": "0x1f0f0e647b55d7951e24e4675457e231021e1d3acfb0af1e9c77c83b331ba8f2",
 			"license": "CBT",
 			"urls": [
-				"bzz-raw://6b007774b858624eae419452ce2b0a4db6e63e0f2d49ddecb1c75e4697f39f71",
-				"dweb:/ipfs/QmR9Z4YfUiSWUwnpZNr6T78u5Ap1bcj7kvxjJkcHzqtw1M"
+				"bzz-raw://a60782082dde034bca7ec20c03f31141e84105421f068993548fbb43d670c726",
+				"dweb:/ipfs/QmXUW3MiHLU7epgVg6anutZMcHa53XouGzcZVHBXh7r3HV"
 			]
 		}
 	},
